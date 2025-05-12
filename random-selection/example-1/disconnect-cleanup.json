@@ -1,0 +1,7 @@
+// Highlights real-time state synchronization.
+socket.on('disconnect', () => {
+    if (socket.username) {
+        onlineUsers = onlineUsers.filter(user => user !== socket.username);
+        io.emit('update userlist', onlineUsers);
+    }
+});

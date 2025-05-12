@@ -1,0 +1,5 @@
+// Enhances UX with AI-generated prompts.
+const handleSurpriseMe = () => {
+  const randomPrompt = getRandomPrompt(form.prompt);
+  setForm({ ...form, prompt: randomPrompt });
+};

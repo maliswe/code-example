@@ -1,0 +1,6 @@
+// Shows how chat state is managed (with potential race conditions or memory risks).
+if (onlineUsers.indexOf(username) === -1) {
+    onlineUsers.push(username);
+    socket.username = username;
+    io.emit('update userlist', onlineUsers);
+}

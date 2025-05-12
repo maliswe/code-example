@@ -1,0 +1,5 @@
+// Shows logging and response control.
+catch (error) {
+    console.error('Error calling OpenAI API: ', error.response.data);
+    res.status(500).send('Error processing your request');
+}

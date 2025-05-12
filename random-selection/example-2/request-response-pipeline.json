@@ -1,0 +1,7 @@
+//  Represents a minimal input/output loop for chat.
+// AI testing angle: Great candidate for auto-suggesting schema validation or input sanitization.
+app.post('/chat', async (req, res) => {
+    const userMessage = req.body.message;
+    ...
+    res.json({ message: botMessage });
+});

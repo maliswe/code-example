@@ -1,0 +1,4 @@
+// Demonstrates how AI tools might autocomplete repetitive fetch logic.
+const response = await axios.get(
+  `https://api.openweathermap.org/data/2.5/weather?q=Jaipur&appid=${apiKey}&units=metric`
+);

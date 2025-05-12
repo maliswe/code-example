@@ -1,0 +1,5 @@
+// Simple and common but could be improved with user feedback or error boundaries.
+catch (error) {
+  setError(error);
+  setIsLoading(false);
+}

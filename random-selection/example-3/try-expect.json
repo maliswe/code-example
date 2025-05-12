@@ -1,0 +1,5 @@
+// Very common but risky pattern — silent failures.
+try:
+    tweets = api.user_timeline(screen_name=screen_name, count=10)
+except:
+    tweets = []

@@ -1,0 +1,15 @@
+
+// Demonstrates a full OpenAI API call structure.
+const response = await axios.post(
+    OPENAI_API_URL,
+    {
+        messages: [{ role: "user", content: userMessage }],
+        model: 'gpt-3.5-turbo',
+    },
+    {
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${OPENAI_API_KEY}`,
+        },
+    }
+);
